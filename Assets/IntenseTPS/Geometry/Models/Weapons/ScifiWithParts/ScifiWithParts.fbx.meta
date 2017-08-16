@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: ce9da6cdb2ec4f642b2ed8ae8913f77d
+timeCreated: 1469433222
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Animated1
+    100002: Animated2
+    100004: barrel1
+    100006: barrel2
+    100008: BulletDamage2
+    100010: BulletDamge1
+    100012: clip1
+    100014: clip2
+    100016: clip3
+    100018: Flashlight1
+    100020: grip1
+    100022: grip2
+    100024: polySurface59
+    100026: //RootNode
+    100028: Shotgun
+    100030: Sight1
+    100032: Sight2
+    100034: Silencer
+    400000: Animated1
+    400002: Animated2
+    400004: barrel1
+    400006: barrel2
+    400008: BulletDamage2
+    400010: BulletDamge1
+    400012: clip1
+    400014: clip2
+    400016: clip3
+    400018: Flashlight1
+    400020: grip1
+    400022: grip2
+    400024: polySurface59
+    400026: //RootNode
+    400028: Shotgun
+    400030: Sight1
+    400032: Sight2
+    400034: Silencer
+    2300000: Animated1
+    2300002: Animated2
+    2300004: barrel1
+    2300006: barrel2
+    2300008: BulletDamage2
+    2300010: BulletDamge1
+    2300012: clip1
+    2300014: clip2
+    2300016: clip3
+    2300018: Flashlight1
+    2300020: grip1
+    2300022: grip2
+    2300024: polySurface59
+    2300026: Shotgun
+    2300028: Sight1
+    2300030: Sight2
+    2300032: Silencer
+    3300000: Animated1
+    3300002: Animated2
+    3300004: barrel1
+    3300006: barrel2
+    3300008: BulletDamage2
+    3300010: BulletDamge1
+    3300012: clip1
+    3300014: clip2
+    3300016: clip3
+    3300018: Flashlight1
+    3300020: grip1
+    3300022: grip2
+    3300024: polySurface59
+    3300026: Shotgun
+    3300028: Sight1
+    3300030: Sight2
+    3300032: Silencer
+    4300000: Animated1
+    4300002: Animated2
+    4300004: barrel1
+    4300006: barrel2
+    4300008: grip1
+    4300010: grip2
+    4300012: Silencer
+    4300014: BulletDamage2
+    4300016: BulletDamge1
+    4300018: Sight2
+    4300020: Sight1
+    4300022: Shotgun
+    4300024: clip1
+    4300026: clip2
+    4300028: clip3
+    4300030: Flashlight1
+    4300032: polySurface59
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 6
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
