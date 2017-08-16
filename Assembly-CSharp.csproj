@@ -242,6 +242,7 @@
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SerializableClasses\LookAtIKProps.cs" />
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SerializableClasses\ThrowProps.cs" />
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SerializableClasses\ThrowableBag.cs" />
+     <Compile Include="Assets\Script\CameraFollow.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
