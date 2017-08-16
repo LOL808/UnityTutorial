@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
     public bool isHuman;
 
     private Dictionary<HumanBodyBones, Transform> bodySensorRayParts;
-
+    //read-only
     public Dictionary<HumanBodyBones, Transform> BodySensorRayParts
     {
         get
@@ -47,7 +47,11 @@ public class Health : MonoBehaviour
             _tempTimer -= Time.deltaTime;
         }
     }
-
+    //rb  -->rigidBody
+    //col --> collider
+        
+    //onOff:true---> isKinematic=false,isTrigger=false
+    //onoff:false--> isKinematic=true ,isTrigger=true
     public static void SwitchRagdoll(bool onOff, Rigidbody[] rbzRagdoll, Collider[] colzRagdoll)
     {
         foreach (Rigidbody rb in rbzRagdoll)
@@ -63,8 +67,10 @@ public class Health : MonoBehaviour
         {
             animator = GetComponent<Animator>();
             bodySensorRayParts = new Dictionary<HumanBodyBones, Transform>();
+            //traverse all enum 
             foreach (HumanBodyBones humanBodyBone in Enum.GetValues(typeof(HumanBodyBones)))
             {
+                //if find a transform then save  
                 if (animator.GetBoneTransform(humanBodyBone))
                     bodySensorRayParts.Add(humanBodyBone, animator.GetBoneTransform(humanBodyBone));
             }

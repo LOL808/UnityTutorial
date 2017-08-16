@@ -4,8 +4,8 @@ labels:
 - character
 - Humanoid
 - model
-timeCreated: 1459294156
-licenseType: Store
+timeCreated: 1502865472
+licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -168,9 +168,11 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -207,6 +209,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human:
     - boneName: swat:Hips
       humanName: Hips
@@ -640,385 +643,393 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: swat:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     skeleton:
     - name: Swat(Clone)
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Geo
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Soldier_body
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Soldier_head
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:Hips
+      parentName: 
       position: {x: -0.000000036475488, y: 0.9636868, z: -0.00035689777}
       rotation: {x: -1.0099298e-15, y: -0.000000017586608, z: 0.00000055231106, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:Spine
+      parentName: 
       position: {x: -0, y: 0.092263, z: 0.015771}
       rotation: {x: 1.0099131e-15, y: 0.000000017586608, z: -0.000000552312, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:Spine1
+      parentName: 
       position: {x: -0, y: 0.16253999, z: -0.001656}
       rotation: {x: 3.8774097e-26, y: -4.2632574e-14, z: 6.82121e-13, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:Spine2
+      parentName: 
       position: {x: -0, y: 0.13639599, z: -0.012922999}
       rotation: {x: 0, y: 0, z: 2.7084222e-35, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:Neck
+      parentName: 
       position: {x: -0, y: 0.13877401, z: -0.043541998}
       rotation: {x: -5.2041704e-18, y: 4.2632927e-14, z: 2.273737e-13, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:Neck1
+      parentName: 
       position: {x: -0, y: 0.0434, z: 0.009269}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:Head
+      parentName: 
       position: {x: -0, y: 0.040266, z: 0.0085849995}
       rotation: {x: 0, y: -0, z: -2.3159499e-36, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:HeadTop_End
+      parentName: 
       position: {x: -0, y: 0.178866, z: 0.001231}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:Jaw
+      parentName: 
       position: {x: -0, y: 0.020302998, z: 0.024561998}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftEye
+      parentName: 
       position: {x: -0.030057, y: 0.072618, z: 0.079555996}
       rotation: {x: 0.052676123, y: -0.032308664, z: 0.0017051565, w: 0.9980874}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightEye
+      parentName: 
       position: {x: 0.030057, y: 0.072618, z: 0.079555996}
       rotation: {x: 0.054157075, y: -0.02544686, z: 0.0013806026, w: 0.9982072}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftShoulder
+      parentName: 
       position: {x: -0.061442, y: 0.10187, z: -0.037932}
       rotation: {x: -0.000000044703484, y: 4.2632557e-14, z: -0.000000044703256, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftArm
+      parentName: 
       position: {x: -0.123191, y: -0.01113, z: -0.017934998}
       rotation: {x: 0.000000044703484, y: 2.4507967e-22, z: 0.000000044703484, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftForeArm
+      parentName: 
       position: {x: -0.27686998, y: 0, z: 0}
       rotation: {x: -0.000000059604638, y: -0.000000004141816, z: -1.03060386e-22,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHand
+      parentName: 
       position: {x: -0.278738, y: 0, z: 0}
       rotation: {x: 0.05113651, y: -0.021971252, z: 0.02823349, w: 0.9980507}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandThumb1
+      parentName: 
       position: {x: -0.023784999, y: -0.010029, z: 0.026208999}
       rotation: {x: -0.06863166, y: 0.03107398, z: -0.07510399, w: 0.9943257}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandThumb2
+      parentName: 
       position: {x: -0.033624, y: -0.010029, z: 0.028397998}
       rotation: {x: -0.035205353, y: 0.11767261, z: -0.0001269187, w: 0.9924282}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandThumb3
+      parentName: 
       position: {x: -0.045018, y: -0.013444999, z: 0.021782998}
       rotation: {x: 0.055065684, y: 0.008100932, z: 0.11880108, w: 0.9913569}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandThumb4
+      parentName: 
       position: {x: -0.032144, y: 0, z: 0.014899}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandMiddle1
+      parentName: 
       position: {x: -0.104638994, y: 0.006148, z: 0.004298}
       rotation: {x: 0.00000024084895, y: 0.020497764, z: -0.029320732, w: 0.99935985}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandMiddle2
+      parentName: 
       position: {x: -0.057921, y: 0, z: 0}
       rotation: {x: 9.52894e-20, y: 0.000000029646259, z: -0.0000000030459464, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandMiddle3
+      parentName: 
       position: {x: -0.037132, y: 0, z: 0}
       rotation: {x: 3.9375846e-16, y: -0.00000000152297, z: -0.000000014823132, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandMiddle4
+      parentName: 
       position: {x: -0.027579, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandIndex1
+      parentName: 
       position: {x: -0.103944995, y: 0.006148, z: 0.027054999}
       rotation: {x: 0.00000031545443, y: 0.020497816, z: -0.029320782, w: 0.99935985}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandIndex2
+      parentName: 
       position: {x: -0.055493, y: 0, z: 0}
       rotation: {x: -0.00000010376189, y: 0.000000014823123, z: -0.0000000015229725,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandIndex3
+      parentName: 
       position: {x: -0.033910997, y: 0, z: 0}
       rotation: {x: 7.053555e-15, y: 0.000000008731248, z: -0.000000060815495, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandIndex4
+      parentName: 
       position: {x: -0.027579, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandRing1
+      parentName: 
       position: {x: -0.103252, y: 0.003211, z: -0.018755}
       rotation: {x: 0.00000027093733, y: 0.020497791, z: -0.02932075, w: 0.99935985}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandRing2
+      parentName: 
       position: {x: -0.054452, y: 0, z: 0}
       rotation: {x: -0.000000029646253, y: 0.000000025077343, z: -0.00000004751532,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandRing3
+      parentName: 
       position: {x: -0.037132, y: 0, z: 0}
       rotation: {x: 0.00000005929251, y: -0.0000000133001565, z: 0.000000016346096,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandRing4
+      parentName: 
       position: {x: -0.027579, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandPinky1
+      parentName: 
       position: {x: -0.10012999, y: -0.00078299997, z: -0.039670996}
       rotation: {x: 0.00000027064777, y: 0.020497803, z: -0.029320782, w: 0.99935985}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandPinky2
+      parentName: 
       position: {x: -0.036763, y: 0, z: 0}
       rotation: {x: 0.000000029646255, y: -0.0000000133001565, z: 0.000000016346101,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandPinky3
+      parentName: 
       position: {x: -0.028113, y: 0, z: 0}
       rotation: {x: -0.00000005929251, y: -0.0000000326922, z: -0.00000002660031,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftHandPinky4
+      parentName: 
       position: {x: -0.019255, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightShoulder
+      parentName: 
       position: {x: 0.061402, y: 0.10187, z: -0.037932}
       rotation: {x: -0.000000014901161, y: 4.2632564e-14, z: -0.000000044703256, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightArm
+      parentName: 
       position: {x: 0.123231, y: -0.01113, z: -0.017934998}
       rotation: {x: 0.000000014901161, y: 7.7756505e-24, z: 0.000000044703484, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightForeArm
+      parentName: 
       position: {x: 0.27686998, y: 0, z: 0}
       rotation: {x: -0.000000059604638, y: 0.0000000041418176, z: -3.0589697e-15,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHand
+      parentName: 
       position: {x: 0.278738, y: 0, z: 0}
       rotation: {x: 0.040680885, y: 0.020760989, z: -0.021893872, w: 0.99871653}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandThumb1
+      parentName: 
       position: {x: 0.025178, y: -0.009366999, z: 0.025137}
       rotation: {x: -0.06401593, y: -0.012398623, z: 0.07534742, w: 0.99502313}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandThumb2
+      parentName: 
       position: {x: 0.032638, y: -0.010869999, z: 0.029669}
       rotation: {x: -0.03807694, y: -0.1338866, z: -0.0071657505, w: 0.99023896}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandThumb3
+      parentName: 
       position: {x: 0.044165, y: -0.013703, z: 0.02135}
       rotation: {x: 0.04037871, y: -0.060843684, z: -0.12257853, w: 0.98976874}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandThumb4
+      parentName: 
       position: {x: 0.034762, y: -0.00052, z: 0.011709}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandIndex1
+      parentName: 
       position: {x: 0.104665, y: 0.004896, z: 0.027119998}
       rotation: {x: 0.00000028795787, y: -0.019852756, z: 0.022720715, w: 0.99954474}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandIndex2
+      parentName: 
       position: {x: 0.053767998, y: 0, z: 0}
       rotation: {x: -0.000000044555378, y: -0.000000014851794, z: 0.0000000012119381,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandIndex3
+      parentName: 
       position: {x: 0.033855, y: 0, z: 0}
       rotation: {x: 0.00000002970359, y: 0.000000017275667, z: 0.000000028491659,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandIndex4
+      parentName: 
       position: {x: 0.027730998, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandMiddle1
+      parentName: 
       position: {x: 0.107595995, y: 0.004896, z: 0.004278}
       rotation: {x: 0.00000028802614, y: -0.019852716, z: 0.022720667, w: 0.99954474}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandMiddle2
+      parentName: 
       position: {x: 0.056167997, y: 0, z: 0}
       rotation: {x: -0.000000014851794, y: -0.000000014851796, z: 0.0000000012119388,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandMiddle3
+      parentName: 
       position: {x: 0.037364, y: 0, z: 0}
       rotation: {x: 0.00000005940717, y: 0.000000033339404, z: 0.000000042131507,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandMiddle4
+      parentName: 
       position: {x: 0.028803, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandRing1
+      parentName: 
       position: {x: 0.104701996, y: 0.003879, z: -0.019363}
       rotation: {x: 0.0000003027992, y: -0.01985273, z: 0.022720682, w: 0.99954474}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandRing2
+      parentName: 
       position: {x: 0.054013, y: 0, z: 0}
       rotation: {x: -0.000000029703585, y: -0.000000026067768, z: 0.000000046979252,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandRing3
+      parentName: 
       position: {x: 0.033915997, y: 0, z: 0}
       rotation: {x: 0.00000005940717, y: 0.000000008792098, z: -0.0000000754709, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandRing4
+      parentName: 
       position: {x: 0.029664999, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandPinky1
+      parentName: 
       position: {x: 0.099715, y: -0.001191, z: -0.03954}
       rotation: {x: 0.00000030250035, y: -0.01985274, z: 0.022720713, w: 0.99954474}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandPinky2
+      parentName: 
       position: {x: 0.036528, y: 0, z: 0}
       rotation: {x: 0.000000029703587, y: 0.0000000136398555, z: -0.000000016063733,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandPinky3
+      parentName: 
       position: {x: 0.02782, y: 0, z: 0}
       rotation: {x: -0.000000089110756, y: -1.10613186e-16, z: -1.3555174e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightHandPinky4
+      parentName: 
       position: {x: 0.022767, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftUpLeg
+      parentName: 
       position: {x: -0.096338, y: -0.032732997, z: 0}
       rotation: {x: -0.01407566, y: 0.00000071388985, z: 0.0000771172, w: 0.99990094}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftLeg
+      parentName: 
       position: {x: -0, y: -0.4173, z: -0.0173}
       rotation: {x: 0.0290497, y: -0.0000070932897, z: 0.00000019555725, w: 0.999578}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftFoot
+      parentName: 
       position: {x: -0.000126, y: -0.39189997, z: -0.008477}
       rotation: {x: -0.014977093, y: 0.0000038216886, z: -0.00007760376, w: 0.9998879}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftToeBase
+      parentName: 
       position: {x: 0.001833, y: -0.121857, z: 0.082823}
       rotation: {x: -0.00000000756961, y: 1.1701219e-10, z: 9.324026e-10, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:LeftFootToeBase_End
+      parentName: 
       position: {x: -0, y: 0, z: 0.118}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightUpLeg
+      parentName: 
       position: {x: 0.096338, y: -0.032732997, z: 0}
       rotation: {x: -0.014072473, y: 0.00000072121543, z: 0.00007712925, w: 0.999901}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightLeg
+      parentName: 
       position: {x: -0, y: -0.4173, z: -0.0173}
       rotation: {x: 0.02904416, y: -0.0000071180048, z: 0.0000001947467, w: 0.9995781}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightFoot
+      parentName: 
       position: {x: -0.000126, y: -0.39189997, z: -0.008477}
       rotation: {x: -0.014974739, y: 0.000003830616, z: -0.00007761533, w: 0.9998879}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightToeBase
+      parentName: 
       position: {x: 0.001833, y: -0.121857, z: 0.082823}
       rotation: {x: 0.0000000036931533, y: 6.531309e-11, z: -4.2064143e-12, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: swat:RightFootToeBase_End
+      parentName: 
       position: {x: -0.000032, y: 0, z: 0.118}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -1027,7 +1038,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 3
   humanoidOversampling: 1

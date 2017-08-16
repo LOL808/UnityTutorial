@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Player
 {
     public enum PredefinedLocomType { FreeWithKeys, StaticWithKeys, WithNavmesh, DeactivatedLayer }
-
+    
     public enum MoveType { Idle, Walk, Run, Sprint };
 
     #region Override Params

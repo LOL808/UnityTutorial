@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 1c5272aec53f71c499e3ec7fd19a64f4
 labels:
+- Animatorcontroller
 - animatorcontroller
 timeCreated: 1466681190
 licenseType: Store
 NativeFormatImporter:
+  mainObjectFileID: -1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

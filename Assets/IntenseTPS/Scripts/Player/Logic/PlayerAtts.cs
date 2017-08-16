@@ -116,9 +116,10 @@ namespace Player
             if (!IsDead)
                 footSoundFx.FootPlantOnAnimatorIK(layerIndex);
         }
-
+        //invoked when player die
         private void InvokePlayerDead()
         {
+            
             Health.SwitchRagdoll(true, transform.GetComponentsInChildren<Rigidbody>(), transform.GetComponentsInChildren<Collider>());
             Animator.enabled = false;
             GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
