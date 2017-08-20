@@ -128,8 +128,8 @@ namespace Player
             userInput = plAnimator.GetComponent<SetupAndUserInput>();
             player = userInput.GetComponent<PlayerAtts>();
             plCapCollider = userInput.GetComponent<CapsuleCollider>();
-            Cam = transform.FindChild("Main Camera").GetComponent<Camera>();
-            moveReference = transform.FindChild("Move Reference");
+            Cam = transform.Find("Main Camera").GetComponent<Camera>();
+            moveReference = transform.Find("Move Reference");
 
             if (!plAnimator || !followTransform || !userInput || !player || !plCapCollider || !Cam || !moveReference)
             {

@@ -362,18 +362,18 @@ namespace Player
                     targetLogic = RefTarget.GetComponent<TargetLogic>();
                 }
 
-            if (player.transform.FindChild("ItemChecker"))
-                itemChecker = player.transform.FindChild("ItemChecker").GetComponent<ItemsAround>();
+            if (player.transform.Find("ItemChecker"))
+                itemChecker = player.transform.Find("ItemChecker").GetComponent<ItemsAround>();
 
             foreach (Transform t in transform.GetComponentsInChildren<Transform>())
                 if (t.CompareTag("RightHandHold"))
-                    RightHandHold = t.FindChild("PosRotFixer");
+                    RightHandHold = t.Find("PosRotFixer");
             foreach (Transform t in transform.GetComponentsInChildren<Transform>())
                 if (t.CompareTag("LeftHandHold"))
-                    LeftHandHold = t.FindChild("PosRotFixer");
+                    LeftHandHold = t.Find("PosRotFixer");
             foreach (Transform t in transform.GetComponentsInChildren<Transform>())
                 if (t.CompareTag("WeaponIK"))
-                    WeaponIK = t.FindChild("PosRotFixer");
+                    WeaponIK = t.Find("PosRotFixer");
 
             playerCamera = userInput.cameraRig.GetComponent<PlayerCamera>();
 

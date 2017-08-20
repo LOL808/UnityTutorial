@@ -33,7 +33,7 @@ namespace Player
             playerT = userInput.transform;
             rb = userInput.GetComponent<Rigidbody>();
             if (userInput.cameraRig)
-                moveReference = userInput.cameraRig.FindChild("Move Reference");
+                moveReference = userInput.cameraRig.Find("Move Reference");
         }
 
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

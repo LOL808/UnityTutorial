@@ -139,7 +139,7 @@ namespace Player
             agent = userInput.GetComponent<UnityEngine.AI.NavMeshAgent>();
             animator = userInput.GetComponent<Animator>();
             if (userInput.cameraRig)
-                moveReference = userInput.cameraRig.FindChild("Move Reference");
+                moveReference = userInput.cameraRig.Find("Move Reference");
 
             Transform TurnToReference = null;
             if (userInput && userInput.cameraRig)

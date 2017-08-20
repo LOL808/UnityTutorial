@@ -241,10 +241,10 @@ namespace Player
             else if (informationTextPrefab && infoTextParentPanel)
             {
                 GameObject textClone = Instantiate(informationTextPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-                textClone.transform.FindChild("InfoText").GetComponent<Text>().text = text;
+                textClone.transform.Find("InfoText").GetComponent<Text>().text = text;
                 textClone.transform.SetParent(infoTextParentPanel, false);
 
-                infoTexts.Add(new Small3dHudInfoText(id, textClone.GetComponent<Animator>(), timer, textClone.transform.FindChild("InfoText").GetComponent<Text>()));
+                infoTexts.Add(new Small3dHudInfoText(id, textClone.GetComponent<Animator>(), timer, textClone.transform.Find("InfoText").GetComponent<Text>()));
             }
         }
 
@@ -261,11 +261,11 @@ namespace Player
             {
                 GameObject textClone = Instantiate(worldInformationTextPrefab, position, rotation) as GameObject;
                 textClone.GetComponent<RectTransform>().position = position;
-                textClone.transform.FindChild("InfoWorldTextPanelPrefab").FindChild("InfoText").GetComponent<Text>().text = text;
+                textClone.transform.Find("InfoWorldTextPanelPrefab").Find("InfoText").GetComponent<Text>().text = text;
                 textClone.transform.SetParent(null, true);
                 textClone.transform.localScale = worldInfoTextScale * Vector3.one;
-                worldInfoTexts.Add(new Small3dHudInfoText(id, textClone.transform.FindChild("InfoWorldTextPanelPrefab").GetComponent<Animator>(), timer,
-                    textClone.transform.FindChild("InfoWorldTextPanelPrefab").FindChild("InfoText").GetComponent<Text>()
+                worldInfoTexts.Add(new Small3dHudInfoText(id, textClone.transform.Find("InfoWorldTextPanelPrefab").GetComponent<Animator>(), timer,
+                    textClone.transform.Find("InfoWorldTextPanelPrefab").Find("InfoText").GetComponent<Text>()
                     ));
             }
         }

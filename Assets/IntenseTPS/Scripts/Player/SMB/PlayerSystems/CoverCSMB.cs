@@ -77,13 +77,13 @@ namespace Player
 
         public override void OnEnabled(Animator anim)
         {
-            if (userInput.transform.FindChild("CoverChecker"))
-                coverChecker = player.transform.FindChild("CoverChecker").GetComponent<CoverTargetLogic>();
+            if (userInput.transform.Find("CoverChecker"))
+                coverChecker = player.transform.Find("CoverChecker").GetComponent<CoverTargetLogic>();
             animator = userInput.GetComponent<Animator>();
             transform = userInput.transform;
             if (userInput.cameraRig)
             {
-                moveReference = userInput.cameraRig.FindChild("Move Reference");
+                moveReference = userInput.cameraRig.Find("Move Reference");
                 playerCamera = userInput.cameraRig.GetComponent<PlayerCamera>();
             }
 

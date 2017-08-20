@@ -50,13 +50,13 @@ namespace Shooter.StateSystems
                 }
             foreach (Transform t in ai.Transform.GetComponentsInChildren<Transform>())
                 if (t.CompareTag("RightHandHold"))
-                    RightHandHold = t.FindChild("PosRotFixer");
+                    RightHandHold = t.Find("PosRotFixer");
             foreach (Transform t in ai.Transform.GetComponentsInChildren<Transform>())
                 if (t.CompareTag("LeftHandHold"))
-                    LeftHandHold = t.FindChild("PosRotFixer");
+                    LeftHandHold = t.Find("PosRotFixer");
             foreach (Transform t in ai.Transform.GetComponentsInChildren<Transform>())
                 if (t.CompareTag("WeaponIK"))
-                    WeaponIK = t.FindChild("PosRotFixer");
+                    WeaponIK = t.Find("PosRotFixer");
             if (fireProps.weapons != null && fireProps.weapons.Count > 0)
             {
                 ai.CurrentWeapon = fireProps.weapons[fireProps.startWeaponIndex > fireProps.weapons.Count - 1 ? 0 : fireProps.startWeaponIndex];

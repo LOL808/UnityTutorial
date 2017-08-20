@@ -161,9 +161,9 @@ namespace Player
             foreach (Transform t in transform.GetComponentsInChildren<Transform>())
             {
                 if (t.CompareTag("LeftHandHold"))
-                    leftHandHold = t.FindChild("PosRotFixer");
+                    leftHandHold = t.Find("PosRotFixer");
                 if (t.CompareTag("RightHandHold"))
-                    rightHandHold2 = t.FindChild("PosRotFixer2");
+                    rightHandHold2 = t.Find("PosRotFixer2");
             }
 
             foreach (Transform tr in userInput.cameraRig.GetComponentsInChildren<Transform>())

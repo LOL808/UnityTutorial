@@ -30,7 +30,7 @@ namespace Player
             if (plAtts)
             {
                 camTransform = plAtts.GetComponent<SetupAndUserInput>().cameraRig;
-                fireRef = transform.FindChild("Fire Reference");
+                fireRef = transform.Find("Fire Reference");
                 smbFire = plAtts.SmbWeapon;
                 smbLook = plAtts.SmbLookIK;
             }
