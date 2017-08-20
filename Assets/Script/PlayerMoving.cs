@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class PlayerMoving : MonoBehaviour {
 
+	public enum WeaponStyle{
+		PISTOL,
+		RIFEL
+	}
+	public WeaponStyle weaponStyle;
 	private Animator _animator;
-	public float speed  = 10f;
-
 	private Rigidbody _rigidBody;
 	// Use this for initialization
 
 	void Start () {
 		print ("Start");
 		_animator = GetComponent<Animator> ();
-		_rigidBody = GetComponent<Rigidbody> ();
-		Debug.Assert (_rigidBody, "RIGIDBODY IS NULL");
+
 		Debug.Assert (_animator, "ANIMATOR IS NULL");
-		_animator.SetInteger ("LocomotionType",1);
+//		_animator.SetInteger ("LocomotionType",1);
+		switch(weaponStyle){
+		case WeaponStyle.PISTOL:
+			_animator.SetInteger ("LocomotionType", 0);
+			break;
+		case WeaponStyle.RIFEL:
+			_animator.SetInteger ("LocomotionType", 1);
+			break;
+
+		}
+
 	}
 	
 	// Update is called once per frame
