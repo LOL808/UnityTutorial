@@ -243,6 +243,7 @@
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SerializableClasses\ThrowProps.cs" />
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SerializableClasses\ThrowableBag.cs" />
      <Compile Include="Assets\Script\CameraFollow.cs" />
+     <Compile Include="Assets\Script\ItemOnGround.cs" />
      <Compile Include="Assets\Script\PlayerMoving.cs" />
      <Compile Include="Assets\Script\PlayerTurning.cs" />
      <Compile Include="Assets\Script\WeaponManager.cs" />
