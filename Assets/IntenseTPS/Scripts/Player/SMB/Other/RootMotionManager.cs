@@ -51,15 +51,20 @@ public class RootMotionManager
         RaycastHit predictHit;
 
         // Raycast straight down from the character's position.
+        //向下cast ray保存碰撞信息到currentHit
+        //                origin                             direction
         Ray ray = new Ray(m_Transform.position + Vector3.up, -Vector3.up);
         Physics.Raycast(ray, out currentHit, k_RayDistance, mask);
 
         // Raycast straight down from the forward edge of the character's capsule.
+        //在位置变化方向上的碰撞体边缘向下cast ray
         ray.origin += m_Animator.deltaPosition.normalized * (m_Capsule.radius + k_ErrorMargin);
         Physics.Raycast(ray, out predictHit, k_RayDistance, mask);
-
         // Create vectors of motion along the planes where the character currently is and where it's going.
         float deltaPosMag = m_Animator.deltaPosition.magnitude;
+        //获取上次跑了多长
+        // Vector3.ProjectOnPlane(vector,planeNormal)
+        
         Vector3 currentMotion = Vector3.ProjectOnPlane(m_Animator.deltaPosition, currentHit.normal).normalized * deltaPosMag;
         Vector3 predictMotion = Vector3.ProjectOnPlane(m_Animator.deltaPosition, predictHit.normal).normalized * deltaPosMag;
 
@@ -102,6 +107,7 @@ public class RootMotionManager
         float heightDiff = info.predictHit.point.y - info.currentHit.point.y;
 
         // If this height difference is small, the character is on a flat surface so apply the normal root motion.
+        //认为是同一平面，继续往前
         if (heightDiff < k_ErrorMargin && heightDiff > -k_ErrorMargin)
         {
             RigidbodyApplication(m_Animator.deltaPosition);
@@ -110,6 +116,8 @@ public class RootMotionManager
 
         // If the movement suggested at the edge of the collider has a positive y component,
         // then the character is about to go up a slope and this movement should be applied.
+        //上坡
+
         if (info.predictMovement.y > k_ErrorMargin)
         {
             RigidbodyApplication(info.predictMovement);
@@ -118,6 +126,7 @@ public class RootMotionManager
 
         // If the movement suggested for the character's current position has a positive y component (but the predicted movement doesn't),
         // then the character is coming to the top of a slope but needs to make it over the top.
+        //当前正在上坡，预测没有上坡，到达破顶
         if (info.currentMovement.y > k_ErrorMargin)
         {
             RigidbodyApplication(info.currentMovement);
