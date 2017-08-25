@@ -243,13 +243,22 @@
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SerializableClasses\ThrowProps.cs" />
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SerializableClasses\ThrowableBag.cs" />
      <Compile Include="Assets\Script\CameraFollow.cs" />
+     <Compile Include="Assets\Script\HLayerWithDefValue.cs" />
      <Compile Include="Assets\Script\ItemOnGround.cs" />
      <Compile Include="Assets\Script\Lootable.cs" />
+     <Compile Include="Assets\Script\PlayerAttributes.cs" />
      <Compile Include="Assets\Script\PlayerMoving.cs" />
+     <Compile Include="Assets\Script\PlayerSysEvents\HLocomotionEvents.cs" />
      <Compile Include="Assets\Script\PlayerTurning.cs" />
      <Compile Include="Assets\Script\RootMotionMgr.cs" />
      <Compile Include="Assets\Script\SMB\BaseSMB.cs" />
+     <Compile Include="Assets\Script\SMB\HLocomotionSMB.cs" />
      <Compile Include="Assets\Script\SMB\RootLocomotionSMB.cs" />
+     <Compile Include="Assets\Script\SMB\SysTrigger\HLocomotionTrigger.cs" />
+     <Compile Include="Assets\Script\SMB\SysTrigger\HSysTrigger.cs" />
+     <Compile Include="Assets\Script\SMB\SysTrigger\HWeaponSysTrigger.cs" />
+     <Compile Include="Assets\Script\SerializableClass\ActorLocomotionProps.cs" />
+     <Compile Include="Assets\Script\UserInput.cs" />
      <Compile Include="Assets\Script\WeaponManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
