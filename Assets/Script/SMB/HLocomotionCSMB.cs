@@ -1,12 +1,29 @@
 ﻿using UnityEngine;
+using Player.Triggers;
 
 namespace Player {
 	public enum HPredefinedLocomType { FreeWithKeys, StaticWithKeys, WithNavmesh, DeactivatedLayer }
 	public enum HMoveType {Idle,Walk,Run,Sprint}
 
-	public class HLocomotionParameters {
+	public class HLocomotionParams {
 		
 	}
+
+	public class HLocomotionStaticParams : HLocomotionParams {
+		public Transform TurnToObject { get; private set;}
+		public int LocomotionIndex { get; private set;}
+
+		public HLocomotionStaticParams(Transform _turnToObject, int _locomStyleIndex) {
+			TurnToObject = _turnToObject;
+			LocomotionIndex = _locomStyleIndex;
+		}
+	}
+
+	public class HLocmotionFreeParams : HLocomotionParams {
+//		public int Lo
+	}
+
+
 
 	public class HLocomotionCSMB : HCustomPlayerSystemSMB {
 
@@ -47,7 +64,7 @@ namespace Player {
 
 		#region Starters
 		public override void OnEnabled(Animator animator) {
-//			HTriggers = new HLayerWithDefValue<HLocomotionEvents> (new HLocomotionTrigger());
+			TriggS = new HLayerWithDefValue<HSysTrigger> (new HLocomotionTrigger());
 		}
 		#endregion
 	}

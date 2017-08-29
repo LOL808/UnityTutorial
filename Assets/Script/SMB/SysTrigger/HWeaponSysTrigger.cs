@@ -1,4 +1,4 @@
-﻿namespace Player.HTriggers {
+﻿namespace Player.Triggers {
 	public class HWeaponSysTrigger : HSysTrigger{
 		public const string ct_Pullout = "Pull out";
 		public const string ct_Holster = "Holster";

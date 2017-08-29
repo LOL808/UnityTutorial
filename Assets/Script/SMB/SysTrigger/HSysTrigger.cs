@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Player.HTriggers {
+namespace Player.Triggers {
 	public class HSysTrigger{
 		protected Dictionary<string,bool> _tirggers;
 		public HSysTrigger() {

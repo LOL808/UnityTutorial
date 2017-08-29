@@ -1,4 +1,4 @@
-﻿namespace Player.HTriggers{
+﻿namespace Player.Triggers{
 	public class HLocomotionTrigger : HSysTrigger {
 		public const string ct_move = "Move";
 		public HLocomotionTrigger() {

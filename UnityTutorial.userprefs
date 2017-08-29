@@ -1,16 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/SMB/HLocomotionCSMB.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\UserInput.cs">
     <Files>
-      <File FileName="Assets/IntenseTPS/Scripts/Player/SMB/PlayerSystems/PlayerSystemEvents/LocomotionEvents.cs" Line="6" Column="5" />
-      <File FileName="Assets/Script/HLayerWithDefValue.cs" Line="17" Column="22" />
-      <File FileName="Assets/IntenseTPS/Scripts/Player/SMB/PlayerSystems/LocomotionCSMB.cs" Line="6" Column="4" />
-      <File FileName="Assets/IntenseTPS/Scripts/Player/SMB/CustomSMB.cs" Line="1" Column="1" />
-      <File FileName="Assets/IntenseTPS/Scripts/Player/SMB/CustomPlayerSystemSMB.cs" Line="1" Column="1" />
-      <File FileName="Assets/IntenseTPS/Scripts/Player/SMB/PlayerSystems/SystemTriggers/LocomotionSystemTriggers.cs" Line="1" Column="1" />
-      <File FileName="Assets/IntenseTPS/Scripts/Player/Logic/LayersWithDefValue.cs" Line="82" Column="10" NotebookId="1" />
-      <File FileName="Assets/Script/SMB/HCustomPlayerSystemSMB.cs" Line="4" Column="2" NotebookId="1" />
-      <File FileName="Assets/Script/SMB/HLocomotionCSMB.cs" Line="44" Column="31" NotebookId="1" />
+      <File FileName="Assets\IntenseTPS\Scripts\Player\SMB\PlayerSystems\SystemTriggers\LocomotionSystemTriggers.cs" Line="18" Column="10" />
+      <File FileName="Assets\IntenseTPS\Scripts\Player\SMB\PlayerSystems\LocomotionCSMB.cs" Line="157" Column="34" />
+      <File FileName="Assets\Script\SMB\HLocomotionCSMB.cs" Line="23" Column="18" NotebookId="1" />
+      <File FileName="Assets\Script\UserInput.cs" Line="24" Column="21" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

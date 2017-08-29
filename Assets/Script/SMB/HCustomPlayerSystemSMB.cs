@@ -1,4 +1,4 @@
-﻿using Player.HTriggers;
+﻿using Player.Triggers;
 
 namespace Player {
 	public class HCustomPlayerSystemSMB : BaseSMB {

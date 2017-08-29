@@ -1,4 +1,4 @@
-﻿using Player.HTriggers;
+﻿using Player.Triggers;
 using UnityEngine;
 
 namespace Player
