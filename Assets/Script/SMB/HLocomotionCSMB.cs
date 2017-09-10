@@ -62,11 +62,57 @@ namespace Player {
 			private set { }
 		}
 
+
+		private HLocomotionParams cProps;
+//		private bool crouch
+		private HMoveType moveType;
+		private float lastAngle, lastVelX,lastVelY;
+		private Transform transform;
+		private Rigidbody rb;
+		private Vector2 smoothDeltaPosition;
+		private Vector2 velocity;
+		private Animator animator;
+
+
 		#region Starters
 		public override void OnEnabled(Animator animator) {
 			TriggS = new HLayerWithDefValue<HSysTrigger> (new HLocomotionTrigger());
+			locomotion_events = new HLocomotionEvents ();
+			transform = animator.transform;
+			animator = _userInput.GetComponent<Animator> ();
+//			animator = userInput.GetComponent<Animator>();
 		}
 		#endregion
+
+		public override void OnStateUpdate(Animator animtor, AnimatorStateInfo stateInfo, int layerIndex) {
+			UpdateLayerWeight (layerIndex);
+			LocomotionWithKeysFree (animtor, layerIndex, false);
+		}
+
+		private void UpdateLayerWeight(int layerIndex) {
+//			/animator.SetLayerWeight (layerIndex,Mathf.Lerp(animator.GetLayerWeight(layerIndex),0,
+			//	(LayerWeightTarget < .5f?HLocomotionStyle.layerDisableSpeed:HLocomotionStyle.layerEnableSpeed)*Time.deltaTime));
+		}
+
+		private void LocomotionWithKeysFree(Animator animator, int layerIndex, bool turnTo) {
+			Vector3 moveDirection = Vector3.zero;
+			float targetAngle = 0.0f;
+			bool shouldMove = true;
+
+		}
+
+
+		public void CalculateRefs(
+			ref Vector3 targetMoveDirection,
+			ref float targetAngle,
+			ref bool shouldMove,
+			bool useKeys = true,
+			bool moveWithNavMesh = false,
+			bool turnTo = false
+		)	{
+				
+		}
+
 	}
 	
 }

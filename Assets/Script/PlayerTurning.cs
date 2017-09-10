@@ -6,9 +6,9 @@ public class PlayerTurning : MonoBehaviour {
 
 	private int _floorMask;
 	private int _rayLen = 1000;
-
 	void Start () {
 		_floorMask = LayerMask.GetMask ("Floor");
+		//_rig = transform.Find ("Alpha_Surface");
 	}
 	
 	// Update is called once per frame

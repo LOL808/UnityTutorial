@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
+using System.Collections.Generic; 
 
 namespace Player {
 	[RequireComponent(typeof(PlayerAttributes))]
 	public class UserInput : MonoBehaviour {
 //		private Animator _animator;
 //		private 
+		public float Horizontal {get; private set;}
+		public float Vertical{ get; private set;} 
 
 		public float LastInput{ get; private set;}
 
@@ -14,7 +16,7 @@ namespace Player {
 //		}
 
 		private void Start() {
-			foreach (BaseSMB smb in GetComponents<BaseSMB>())
+			foreach (BaseSMB smb in GetComponent<Animator>().GetBehaviours<BaseSMB>())
 				smb.OnStart ();
 		}
 
@@ -29,7 +31,15 @@ namespace Player {
 		}
 
 		private void Update() {
-			
-		}		
+			Horizontal = Input.GetAxis ("Horizontal");
+			Vertical = Input.GetAxis ("Vertical");
+
+			if (Horizontal != 0 || Vertical != 0) {
+				LastInput = Time.time;
+			}
+ 		}		
+
+
+
 	}
 }

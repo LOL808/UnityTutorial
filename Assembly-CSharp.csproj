@@ -248,6 +248,7 @@
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SMB\PlayerSystems\WeaponCSMB.cs" />
      <Compile Include="Assets\IntenseTPS\Scripts\Player\SMB\RootMotionSMB.cs" />
      <Compile Include="Assets\Script\CameraFollow.cs" />
+     <Compile Include="Assets\Script\Fire.cs" />
      <Compile Include="Assets\Script\HLayerWithDefValue.cs" />
      <Compile Include="Assets\Script\ItemOnGround.cs" />
      <Compile Include="Assets\Script\Lootable.cs" />
@@ -260,12 +261,14 @@
      <Compile Include="Assets\Script\SMB\BaseSMB.cs" />
      <Compile Include="Assets\Script\SMB\HCustomPlayerSystemSMB.cs" />
      <Compile Include="Assets\Script\SMB\HLocomotionCSMB.cs" />
-     <Compile Include="Assets\Script\SMB\HLocomotionSMB.cs" />
      <Compile Include="Assets\Script\SMB\RootLocomotionSMB.cs" />
      <Compile Include="Assets\Script\SMB\SysTrigger\HLocomotionTrigger.cs" />
      <Compile Include="Assets\Script\SMB\SysTrigger\HSysTrigger.cs" />
      <Compile Include="Assets\Script\SMB\SysTrigger\HWeaponSysTrigger.cs" />
+     <Compile Include="Assets\Script\TestIK.cs" />
      <Compile Include="Assets\Script\UserInput.cs" />
+     <Compile Include="Assets\Script\WeaponAttr.cs" />
+     <Compile Include="Assets\Script\WeaponBehavior.cs" />
      <Compile Include="Assets\Script\WeaponManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
