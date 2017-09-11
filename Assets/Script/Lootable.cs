@@ -15,16 +15,15 @@ public class Lootable : MonoBehaviour {
 //		print (other.gameObject.layer);
 //		print (_playerLayerMask);
 		print (other.gameObject.tag);
-
-
+	
 		if (other.gameObject.tag == "Player") {
-			GameObject leftHand = GameObject.Find ("mixamorig:LeftHand");
+//			GameObject leftHand = GameObject.Find ("mixamorig:LeftHand");
 //			GameObject leftHand = other.gameObject.transform.Find ("mixamorig:LeftHand").gameObject;	
-			Transform holdPos = GameObject.Find("handHoldPos").gameObject.transform;
-			item.transform.parent = leftHand.transform;
+		//	Transform holdPos = GameObject.Find("handHoldPos").gameObject.transform;
+//			item.transform.parent = leftHand.transform;
 //			item.transform = holdPos;
-			item.transform.position = holdPos.position;
-			item.transform.rotation = holdPos.rotation;
+		//	item.transform.position = holdPos.position;
+		//	item.transform.rotation = holdPos.rotation;
 			Destroy (gameObject);
 		}
 

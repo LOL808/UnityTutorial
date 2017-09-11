@@ -36,24 +36,9 @@ public class PlayerMoving : MonoBehaviour {
 		float XInput = Input.GetAxis ("Horizontal");
 		float YInput = Input.GetAxis ("Vertical");
 
-
-
-//		if (Input.GetAxis("Horizontal")!=0f) {
-//			print (Input.GetAxisRaw ("Horizontal"));
-//		}
-//		_rigidBody.MovePosition (transform.position + transform.forward);
-//		if (XInput != 0f) {
-//			
-//		}
-//
 		_animator.SetFloat ("PX",XInput);
 		_animator.SetFloat ("PY",YInput);
 
-
-
-//		print (transform.forward);
 	}
-
-
 
 }

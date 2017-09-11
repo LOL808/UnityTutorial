@@ -69,4 +69,14 @@ public class WeaponBehavior : MonoBehaviour {
 	private void DoReload() {
 		attr.BulletsInMag = attr.MagazineSize;
 	}
-}
+
+	public void OnEquip(Transform holder) {
+		
+	}
+
+	public void OnLoot(Transform looter) {
+		
+	}
+}	
+	
+
