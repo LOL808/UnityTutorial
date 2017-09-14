@@ -8,8 +8,10 @@ public class TestIK : MonoBehaviour {
 	protected Animator animator;
 	public bool ikActived = false;
 
-	public Transform Holdpos = null;
-	public Transform RightHand = null;
+	public Transform LeftHandPos = null;
+	public Transform LeftHandRot = null;
+	public Transform RightHandPos = null;
+	public Transform RightHandRot = null;
 
 	// Use this for initialization
 	void Start () {
@@ -24,13 +26,13 @@ public class TestIK : MonoBehaviour {
 				animator.SetIKRotationWeight (AvatarIKGoal.LeftHand, 1f);
 				animator.SetIKPositionWeight (AvatarIKGoal.RightHand, 1f);
 				animator.SetIKRotationWeight (AvatarIKGoal.RightHand, 1f);		
-				if (Holdpos) {
-					animator.SetIKPosition (AvatarIKGoal.LeftHand, Holdpos.position);
-					animator.SetIKRotation (AvatarIKGoal.LeftHand, Holdpos.rotation);
+				if (LeftHandPos) {
+					animator.SetIKPosition (AvatarIKGoal.LeftHand, LeftHandPos.position);
+					animator.SetIKRotation (AvatarIKGoal.LeftHand, LeftHandRot.localRotation);
 				}
-				if (RightHand) {
-					animator.SetIKPosition (AvatarIKGoal.RightHand, RightHand.position);
-					animator.SetIKRotation (AvatarIKGoal.RightHand, RightHand.rotation);					
+				if (RightHandPos) {
+					animator.SetIKPosition (AvatarIKGoal.RightHand, RightHandPos.position);
+					animator.SetIKRotation (AvatarIKGoal.RightHand, RightHandRot.localRotation);					
 				}
 			}
 			else {
